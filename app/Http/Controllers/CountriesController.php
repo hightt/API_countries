@@ -14,7 +14,7 @@ class CountriesController extends Controller
      */
     public function index()
     {
-        return view('layouts.index');
+        return view('layouts.countries')->with('countries', Country::all());
     }
 
     /**
@@ -46,7 +46,7 @@ class CountriesController extends Controller
      */
     public function show(Country $country)
     {
-        //
+        return view('layouts.country_details', compact('country'));
     }
 
     /**
