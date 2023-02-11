@@ -1,0 +1,45 @@
+html body {
+    min-height: 100vh;
+}
+.main-box {
+    min-height: 85vh;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 8px -4px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 8px -4px rgba(66, 68, 90, 1);
+    background-color: #ebebeb;
+}
+
+.details-box
+{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+
+.details-box-header
+{
+    font-weight: bold;
+    color: #20262E;
+}
+.details-box-content
+{
+    font-size: 25px;
+    color: 20262E;
+}
+
+.main-content
+{
+    border-radius: 10px;
+    background-color: white;
+    min-height: 50vh;
+}
+
+
+.borderCountry:hover
+{
+    cursor: pointer;
+    background-color: #ebe8e8;
+    border-radius: 5px;
+}
