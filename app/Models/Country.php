@@ -14,4 +14,13 @@ class Country extends Model
     protected $dates = ['created_at','updated_at'];
 
 
+    public function getBorderCountries()
+    {
+        return Country::whereIn('short_name', explode(',', $this->borders))->get();
+    }
+
+    public function getCountryCurrencies()
+    {
+        return Currency::whereIn('code', explode(',', $this->currencies))->get();
+    }
 }
